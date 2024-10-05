@@ -29,8 +29,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Kouki321/EnicarInternShipsMgSystem.git
-   cd EnicarInternShipsMgSystem
+https://github.com/Kouki321/Vue.js-Application-with-AI-Model.git
 
 # prj-fire
 
