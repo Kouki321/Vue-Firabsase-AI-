@@ -62,7 +62,21 @@ export { db, auth };
 ```
 
 ## Project setup
+### Running the Flask Backend
+
+Follow the steps below to run the Flask server with CORS enabled and your Keras model:
+
+1. **Install Flask-CORS** to handle cross-origin requests:
+
+   ```bash
+   pip install flask-cors
+   ```
+
+Run your Flask server (flaskk.py):
+   ```bash
+ python flaskk.py
 ```
+
 npm install
 ```
 
@@ -70,6 +84,7 @@ npm install
 ```
 npm run serve
 ```
+model = tf.keras.models.load_model('path_to_your_model.keras')
 
 ### Compiles and minifies for production
 ```
