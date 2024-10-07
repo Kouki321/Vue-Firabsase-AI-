@@ -62,20 +62,9 @@ export { db, auth };
 ```
 
 ## Project setup
-### Running the Flask Backend
-
-Follow the steps below to run the Flask server with CORS enabled and your Keras model:
-
-1. **Install Flask-CORS** to handle cross-origin requests:
-
+ 
    ```bash
-   pip install flask-cors
-   ```
-
-Run your Flask server (flaskk.py):
-   ```bash
- python flaskk.py
-```
+ 
 
 npm install
 ```
@@ -95,6 +84,24 @@ npm run build
 ```
 npm run lint
 ```
+ 
+ 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Running the Flask Backend
+## The backend uses a Flask server with TensorFlow for AI model inference.
+
+# Steps to Run the Flask Server:
+    Install Flask-CORS to handle cross-origin requests:
+```bash
+ pip install flask-cors
+```
+
+  Run the Flask server (flaskk.py):
+```bash
+ python flaskk.py
+```
+Make sure your Keras model is loaded within the Flask app by setting the correct path:
+```python
+ # flaskk.py
+model = tf.keras.models.load_model('path_to_your_model.keras')
+```
